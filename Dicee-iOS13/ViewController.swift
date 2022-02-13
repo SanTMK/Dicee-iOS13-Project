@@ -5,6 +5,9 @@
 //  Created by Angela Yu on 11/06/2019.
 //  Copyright © 2019 London App Brewery. All rights reserved.
 //
+// Edited by Santiago Hernandez on 02/13/2022
+//
+
 
 import UIKit
 
@@ -115,9 +118,10 @@ class ViewController: UIViewController {
             result6.image = randDiceRoll
             score += randKey + 1
             currentValue.text = String(score)
+            gameCompletLabel.text = gameComplete(bet: userBet.text!)
             break
         default:
-            gameCompletLabel.text = gameComplete(bet: userBet.text!)
+            break
         }
         
         turn+=1
