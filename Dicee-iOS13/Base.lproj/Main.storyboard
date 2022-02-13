@@ -112,6 +112,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-LZ-Qb3">
+                                <rect key="frame" x="366" y="105" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rolls Remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcQ-jB-yY5">
                                 <rect key="frame" x="20" y="196" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -119,8 +126,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bet (between 6 and 36" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AZ-h1-IBY">
-                                <rect key="frame" x="20" y="150" width="207" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bet (between 6 and 36)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AZ-h1-IBY">
+                                <rect key="frame" x="20" y="150" width="215" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -158,11 +165,11 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="diceRoll:" destination="kMp-0C-Toz" eventType="touchUpInside" id="jEz-Lw-mIv"/>
+                                    <action selector="diceRollSantiago:" destination="w6s-qI-MkP" eventType="touchUpInside" id="4QX-NI-SW8"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9q4-l1-XZU">
-                                <rect key="frame" x="297" y="143" width="97" height="34"/>
+                                <rect key="frame" x="342" y="143" width="52" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
@@ -174,6 +181,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nz-D4-17t">
+                                <rect key="frame" x="25" y="254" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ViG-jr-nAX">
                                 <rect key="frame" x="86" y="254" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -194,21 +205,10 @@
                                 <rect key="frame" x="330" y="254" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nz-D4-17t">
-                                <rect key="frame" x="25" y="254" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="XLY-EW-26m">
                                 <rect key="frame" x="137" y="453" width="141" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-LZ-Qb3">
-                                <rect key="frame" x="366" y="105" width="24" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r0W-j8-bWd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -216,6 +216,19 @@
                     <navigationItem key="navigationItem" title="Santiago's Game" id="uzj-k3-UCM">
                         <barButtonItem key="backBarButtonItem" title="Back" id="uwA-hL-Ryk"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="currentValue" destination="NsP-LZ-Qb3" id="RbV-yw-JaQ"/>
+                        <outlet property="diceImageView" destination="XLY-EW-26m" id="ai0-Eq-8n7"/>
+                        <outlet property="gameCompletLabel" destination="LcV-g2-Awf" id="itg-1G-HK1"/>
+                        <outlet property="result1" destination="1nz-D4-17t" id="SHW-Xq-bw8"/>
+                        <outlet property="result2" destination="ViG-jr-nAX" id="g2X-xV-Fiq"/>
+                        <outlet property="result3" destination="dMG-nt-6e4" id="Ku8-XR-7dF"/>
+                        <outlet property="result4" destination="5nU-Ih-CPA" id="OUN-Ev-6vP"/>
+                        <outlet property="result5" destination="WQf-JJ-bjT" id="ZbY-ht-GK6"/>
+                        <outlet property="result6" destination="3kG-ja-LQ3" id="Euy-Z5-PbL"/>
+                        <outlet property="rollsRemaining" destination="MWq-IG-che" id="9SV-k0-ZTl"/>
+                        <outlet property="userBet" destination="9q4-l1-XZU" id="TcZ-Ce-QYi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9SN-FK-vpw" sceneMemberID="firstResponder"/>
             </objects>
