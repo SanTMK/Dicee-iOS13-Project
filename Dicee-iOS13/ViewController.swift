@@ -88,41 +88,43 @@ class ViewController: UIViewController {
         switch turn {
         case 0:
             result1.image = randDiceRoll
-            score += randKey
+            score += randKey + 1
             currentValue.text = String(score)
             break
         case 1:
             result2.image = randDiceRoll
-            score += randKey
+            score += randKey + 1
             currentValue.text = String(score)
             break
         case 2:
             result3.image = randDiceRoll
-            score += randKey
+            score += randKey + 1
             currentValue.text = String(score)
             break
         case 3:
             result4.image = randDiceRoll
-            score += randKey
+            score += randKey + 1
             currentValue.text = String(score)
             break
         case 4:
             result5.image = randDiceRoll
-            score += randKey
+            score += randKey + 1
             currentValue.text = String(score)
             break
         case 5:
             result6.image = randDiceRoll
-            score += randKey
+            score += randKey + 1
             currentValue.text = String(score)
             break
         default:
             gameCompletLabel.text = gameComplete(bet: userBet.text!)
         }
         
-        
-        
         turn+=1
+        if turn <= 6 {
+        let rollsLeft = String(6 - turn)
+        rollsRemaining.text = rollsLeft
+        }
     }
     
 }
