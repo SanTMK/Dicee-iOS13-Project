@@ -52,6 +52,7 @@ class ViewController: UIViewController {
     //the dice master array
     let rolls = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
     
+    
     // Turn & socore keeper
     var turn = 0
     var score = 0
