@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7896DB9F27C2DBEB008E863A /* SantiagosGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7896DB9E27C2DBEB008E863A /* SantiagosGameViewController.swift */; };
+		7896DBA227C2EAED008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA027C2EAEC008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav */; };
+		7896DBA327C2EAED008E863A /* poker-chips-daniel_simon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA127C2EAED008E863A /* poker-chips-daniel_simon.wav */; };
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
 		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7896DB9E27C2DBEB008E863A /* SantiagosGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantiagosGameViewController.swift; sourceTree = "<group>"; };
+		7896DBA027C2EAEC008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Shake And Roll Dice-SoundBible.com-591494296.wav"; sourceTree = "<group>"; };
+		7896DBA127C2EAED008E863A /* poker-chips-daniel_simon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "poker-chips-daniel_simon.wav"; sourceTree = "<group>"; };
 		ADAD913B22B0FDAE007B460A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADB0DFF922AFA6090030352D /* Dicee-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78D4C22727C09E2300AD9544 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7896DBA127C2EAED008E863A /* poker-chips-daniel_simon.wav */,
+				7896DBA027C2EAEC008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		ADB0DFF022AFA6090030352D = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +74,11 @@
 		ADB0DFFB22AFA6090030352D /* Dicee-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				7896DB9E27C2DBEB008E863A /* SantiagosGameViewController.swift */,
 				ADB0DFFC22AFA6090030352D /* AppDelegate.swift */,
 				ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */,
 				ADB0E00022AFA6090030352D /* ViewController.swift */,
+				78D4C22727C09E2300AD9544 /* Sounds */,
 				ADB0E00222AFA6090030352D /* Main.storyboard */,
 				ADB0E00522AFA60E0030352D /* Assets.xcassets */,
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
@@ -128,6 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7896DBA327C2EAED008E863A /* poker-chips-daniel_simon.wav in Resources */,
+				7896DBA227C2EAED008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav in Resources */,
 				ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */,
 				ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */,
 				ADAD913C22B0FDAE007B460A /* README.md in Resources */,
@@ -144,6 +163,7 @@
 			files = (
 				ADB0E00122AFA6090030352D /* ViewController.swift in Sources */,
 				ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */,
+				7896DB9F27C2DBEB008E863A /* SantiagosGameViewController.swift in Sources */,
 				ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +309,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWK5FD33Q;
 				INFOPLIST_FILE = "Dicee-iOS13/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.Dicee-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = com.santihernandez3243;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -306,12 +327,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPWK5FD33Q;
 				INFOPLIST_FILE = "Dicee-iOS13/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.Dicee-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = com.santihernandez3243;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

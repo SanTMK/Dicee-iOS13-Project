@@ -52,12 +52,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="obb-o7-A6G">
                     <connections>
-                        <segue destination="w6s-qI-MkP" kind="show" id="XEh-if-jYD"/>
+                        <segue destination="w6s-qI-MkP" kind="presentation" id="XEh-if-jYD"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="Si0-eO-K2W">
                     <connections>
-                        <segue destination="kMp-0C-Toz" kind="show" id="FXD-7O-d24"/>
+                        <action selector="TapAngelasGame:" destination="BYZ-38-t0r" id="MdO-Oi-OkQ"/>
+                        <segue destination="kMp-0C-Toz" kind="presentation" id="NjW-Mf-uAI"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -103,9 +104,9 @@
         <!--Santiago's Game-->
         <scene sceneID="gQg-Dh-1dg">
             <objects>
-                <viewController id="w6s-qI-MkP" customClass="ViewController" customModule="Dicee_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="santiagos_game_vc" id="w6s-qI-MkP" customClass="SantiagosGameViewController" customModule="Dicee_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CKG-N8-aWT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="5AU-vm-9y0">
@@ -189,10 +190,6 @@
                                 <rect key="frame" x="86" y="254" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-nt-6e4">
-                                <rect key="frame" x="147" y="254" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5nU-Ih-CPA">
                                 <rect key="frame" x="208" y="254" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -209,6 +206,10 @@
                                 <rect key="frame" x="137" y="453" width="141" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-nt-6e4">
+                                <rect key="frame" x="147" y="254" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r0W-j8-bWd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -217,17 +218,17 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="uwA-hL-Ryk"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="currentValue" destination="NsP-LZ-Qb3" id="RbV-yw-JaQ"/>
-                        <outlet property="diceImageView" destination="XLY-EW-26m" id="ai0-Eq-8n7"/>
-                        <outlet property="gameCompletLabel" destination="LcV-g2-Awf" id="itg-1G-HK1"/>
-                        <outlet property="result1" destination="1nz-D4-17t" id="SHW-Xq-bw8"/>
-                        <outlet property="result2" destination="ViG-jr-nAX" id="g2X-xV-Fiq"/>
-                        <outlet property="result3" destination="dMG-nt-6e4" id="Ku8-XR-7dF"/>
-                        <outlet property="result4" destination="5nU-Ih-CPA" id="OUN-Ev-6vP"/>
-                        <outlet property="result5" destination="WQf-JJ-bjT" id="ZbY-ht-GK6"/>
-                        <outlet property="result6" destination="3kG-ja-LQ3" id="Euy-Z5-PbL"/>
-                        <outlet property="rollsRemaining" destination="MWq-IG-che" id="9SV-k0-ZTl"/>
-                        <outlet property="userBet" destination="9q4-l1-XZU" id="TcZ-Ce-QYi"/>
+                        <outlet property="currentValue" destination="NsP-LZ-Qb3" id="QSK-MP-p75"/>
+                        <outlet property="diceImageView" destination="XLY-EW-26m" id="bPg-OW-gY0"/>
+                        <outlet property="gameCompleteLabel" destination="LcV-g2-Awf" id="vzH-qr-jgQ"/>
+                        <outlet property="result1" destination="1nz-D4-17t" id="0iZ-cX-e14"/>
+                        <outlet property="result2" destination="ViG-jr-nAX" id="wPz-n2-ogJ"/>
+                        <outlet property="result3" destination="dMG-nt-6e4" id="VsN-Ny-C0Y"/>
+                        <outlet property="result4" destination="5nU-Ih-CPA" id="Vpe-dO-D48"/>
+                        <outlet property="result5" destination="WQf-JJ-bjT" id="jGO-Ry-Ops"/>
+                        <outlet property="result6" destination="3kG-ja-LQ3" id="jRP-95-nYz"/>
+                        <outlet property="rollsRemaining" destination="MWq-IG-che" id="mNk-iq-8Ab"/>
+                        <outlet property="userBet" destination="9q4-l1-XZU" id="5bu-QC-sH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9SN-FK-vpw" sceneMemberID="firstResponder"/>
@@ -239,7 +240,7 @@
             <objects>
                 <viewController id="kMp-0C-Toz" customClass="ViewController" customModule="Dicee_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GcO-Ai-MaN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-7U-XDd">
