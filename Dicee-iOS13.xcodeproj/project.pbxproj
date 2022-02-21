@@ -13,6 +13,7 @@
 		7896DBAA27C33094008E863A /* chips_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA927C33094008E863A /* chips_sound.wav */; };
 		7896DBAC27C333E7008E863A /* sad_trombone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBAB27C333E7008E863A /* sad_trombone.wav */; };
 		7896DBAE27C333EE008E863A /* applause_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBAD27C333EE008E863A /* applause_sound.wav */; };
+		7896DBD027C40728008E863A /* AudioAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBCF27C40728008E863A /* AudioAssets.xcassets */; };
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
 		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		7896DBA927C33094008E863A /* chips_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chips_sound.wav; sourceTree = "<group>"; };
 		7896DBAB27C333E7008E863A /* sad_trombone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sad_trombone.wav; sourceTree = "<group>"; };
 		7896DBAD27C333EE008E863A /* applause_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause_sound.wav; sourceTree = "<group>"; };
+		7896DBCF27C40728008E863A /* AudioAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AudioAssets.xcassets; sourceTree = "<group>"; };
 		ADAD913B22B0FDAE007B460A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADB0DFF922AFA6090030352D /* Dicee-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		78D4C22727C09E2300AD9544 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7896DBCF27C40728008E863A /* AudioAssets.xcassets */,
 				7896DBA727C31B08008E863A /* dice_sound.wav */,
 				7896DBA927C33094008E863A /* chips_sound.wav */,
 				7896DBAB27C333E7008E863A /* sad_trombone.wav */,
@@ -160,6 +163,7 @@
 				ADAD913C22B0FDAE007B460A /* README.md in Resources */,
 				7896DBAA27C33094008E863A /* chips_sound.wav in Resources */,
 				7896DBAC27C333E7008E863A /* sad_trombone.wav in Resources */,
+				7896DBD027C40728008E863A /* AudioAssets.xcassets in Resources */,
 				ADB0E00422AFA6090030352D /* Main.storyboard in Resources */,
 				7896DBA827C31B08008E863A /* dice_sound.wav in Resources */,
 			);
