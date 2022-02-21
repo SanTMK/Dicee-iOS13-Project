@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7896DB9F27C2DBEB008E863A /* SantiagosGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7896DB9E27C2DBEB008E863A /* SantiagosGameViewController.swift */; };
-		7896DBA227C2EAED008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA027C2EAEC008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav */; };
-		7896DBA327C2EAED008E863A /* poker-chips-daniel_simon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA127C2EAED008E863A /* poker-chips-daniel_simon.wav */; };
+		7896DBA527C31619008E863A /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7896DBA427C31619008E863A /* SoundEffects.swift */; };
+		7896DBA827C31B08008E863A /* dice_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA727C31B08008E863A /* dice_sound.wav */; };
+		7896DBAA27C33094008E863A /* chips_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBA927C33094008E863A /* chips_sound.wav */; };
+		7896DBAC27C333E7008E863A /* sad_trombone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBAB27C333E7008E863A /* sad_trombone.wav */; };
+		7896DBAE27C333EE008E863A /* applause_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7896DBAD27C333EE008E863A /* applause_sound.wav */; };
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
 		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
@@ -21,8 +24,11 @@
 
 /* Begin PBXFileReference section */
 		7896DB9E27C2DBEB008E863A /* SantiagosGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantiagosGameViewController.swift; sourceTree = "<group>"; };
-		7896DBA027C2EAEC008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Shake And Roll Dice-SoundBible.com-591494296.wav"; sourceTree = "<group>"; };
-		7896DBA127C2EAED008E863A /* poker-chips-daniel_simon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "poker-chips-daniel_simon.wav"; sourceTree = "<group>"; };
+		7896DBA427C31619008E863A /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		7896DBA727C31B08008E863A /* dice_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dice_sound.wav; sourceTree = "<group>"; };
+		7896DBA927C33094008E863A /* chips_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chips_sound.wav; sourceTree = "<group>"; };
+		7896DBAB27C333E7008E863A /* sad_trombone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sad_trombone.wav; sourceTree = "<group>"; };
+		7896DBAD27C333EE008E863A /* applause_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause_sound.wav; sourceTree = "<group>"; };
 		ADAD913B22B0FDAE007B460A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADB0DFF922AFA6090030352D /* Dicee-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +54,10 @@
 		78D4C22727C09E2300AD9544 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				7896DBA127C2EAED008E863A /* poker-chips-daniel_simon.wav */,
-				7896DBA027C2EAEC008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav */,
+				7896DBA727C31B08008E863A /* dice_sound.wav */,
+				7896DBA927C33094008E863A /* chips_sound.wav */,
+				7896DBAB27C333E7008E863A /* sad_trombone.wav */,
+				7896DBAD27C333EE008E863A /* applause_sound.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -79,6 +87,7 @@
 				ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */,
 				ADB0E00022AFA6090030352D /* ViewController.swift */,
 				78D4C22727C09E2300AD9544 /* Sounds */,
+				7896DBA427C31619008E863A /* SoundEffects.swift */,
 				ADB0E00222AFA6090030352D /* Main.storyboard */,
 				ADB0E00522AFA60E0030352D /* Assets.xcassets */,
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
@@ -145,12 +154,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7896DBA327C2EAED008E863A /* poker-chips-daniel_simon.wav in Resources */,
-				7896DBA227C2EAED008E863A /* Shake And Roll Dice-SoundBible.com-591494296.wav in Resources */,
 				ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */,
+				7896DBAE27C333EE008E863A /* applause_sound.wav in Resources */,
 				ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */,
 				ADAD913C22B0FDAE007B460A /* README.md in Resources */,
+				7896DBAA27C33094008E863A /* chips_sound.wav in Resources */,
+				7896DBAC27C333E7008E863A /* sad_trombone.wav in Resources */,
 				ADB0E00422AFA6090030352D /* Main.storyboard in Resources */,
+				7896DBA827C31B08008E863A /* dice_sound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +175,7 @@
 				ADB0E00122AFA6090030352D /* ViewController.swift in Sources */,
 				ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */,
 				7896DB9F27C2DBEB008E863A /* SantiagosGameViewController.swift in Sources */,
+				7896DBA527C31619008E863A /* SoundEffects.swift in Sources */,
 				ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
