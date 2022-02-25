@@ -17,63 +17,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="UTu-M5-Jof">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="UTu-M5-Jof">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hje-s6-HQa">
-                                <rect key="frame" x="82" y="437" width="251" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Santiago's Game">
-                                            <attributes>
-                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="46" name="GillSans-SemiBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="SantiagosGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lf-39-3zj"/>
-                                    <segue destination="w6s-qI-MkP" kind="presentation" id="jIs-ce-hl2"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-dJ-XO7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-aK-cdR">
-                                <rect key="frame" x="82" y="609" width="251" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Angela's Game">
-                                            <attributes>
-                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="46" name="GillSans-SemiBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="AngelasGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYW-4O-Ukf"/>
-                                    <segue destination="kMp-0C-Toz" kind="presentation" id="aJs-Et-975"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iyf-ZB-7ih" userLabel="top">
+                                <rect key="frame" x="-20" y="68" width="454" height="309"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-dJ-XO7">
+                                        <rect key="frame" x="20" y="20" width="414" height="269"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sh3-dJ-XO7" firstAttribute="centerY" secondItem="Iyf-ZB-7ih" secondAttribute="centerY" id="mgm-kH-FiY"/>
+                                    <constraint firstItem="sh3-dJ-XO7" firstAttribute="centerX" secondItem="Iyf-ZB-7ih" secondAttribute="centerX" id="raD-i3-faz"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ynB-JT-NB3" userLabel="bottom">
+                                <rect key="frame" x="30" y="594" width="354" height="178"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hje-s6-HQa">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="354" id="KgU-ik-kAj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Santiago's Game">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="46" name="GillSans-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SantiagosGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lf-39-3zj"/>
+                                            <segue destination="w6s-qI-MkP" kind="presentation" id="jIs-ce-hl2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-aK-cdR">
+                                        <rect key="frame" x="0.0" y="109" width="354" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="VY7-NA-mIQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Angela's Game">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="46" name="GillSans-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="AngelasGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYW-4O-Ukf"/>
+                                            <segue destination="kMp-0C-Toz" kind="presentation" id="aJs-Et-975"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ynB-JT-NB3" firstAttribute="centerX" secondItem="Iyf-ZB-7ih" secondAttribute="centerX" id="5eV-lK-Ez7"/>
+                            <constraint firstItem="UTu-M5-Jof" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="95Q-fR-fBY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ynB-JT-NB3" secondAttribute="trailing" constant="30" id="DvD-tu-2Cl"/>
+                            <constraint firstAttribute="bottom" secondItem="UTu-M5-Jof" secondAttribute="bottom" id="Jkn-Zl-cX4"/>
+                            <constraint firstItem="UTu-M5-Jof" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QlU-Tl-G41"/>
+                            <constraint firstAttribute="trailing" secondItem="UTu-M5-Jof" secondAttribute="trailing" id="Tmu-Cq-Hsb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ynB-JT-NB3" secondAttribute="bottom" constant="90" id="rRz-ul-hbl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="3jd-GP-ljZ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="trn-6b-eYG"/>
@@ -263,43 +288,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-7U-XDd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cBv-7U-XDd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="nVt-ce-x5y">
-                                <rect key="frame" x="235" y="188" width="141" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-Uh-n58">
-                                <rect key="frame" x="43" y="188" width="141" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcC-OF-HUY">
-                                <rect key="frame" x="120" y="454" width="175" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Roll">
-                                            <attributes>
-                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="49" name="GillSans-SemiBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="diceRoll:" destination="kMp-0C-Toz" eventType="touchUpInside" id="7pS-JX-QiF"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZfE-g9-z1X">
+                                <rect key="frame" x="50" y="50" width="314" height="708"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="G76-7i-YhN" userLabel="top stack">
+                                        <rect key="frame" x="17" y="0.0" width="280" height="334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-Uh-n58">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="334"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="nVt-ce-x5y">
+                                                <rect key="frame" x="180" y="0.0" width="100" height="334"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTU-BW-OW9" userLabel="bottom">
+                                        <rect key="frame" x="49.5" y="374" width="215" height="334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcC-OF-HUY">
+                                                <rect key="frame" x="42.5" y="131" width="130" height="72.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="vET-gY-dzo"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Roll">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="49" name="GillSans-SemiBold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="diceRoll:" destination="kMp-0C-Toz" eventType="touchUpInside" id="7pS-JX-QiF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="OcC-OF-HUY" firstAttribute="centerY" secondItem="aTU-BW-OW9" secondAttribute="centerY" id="Udv-BJ-igP"/>
+                                            <constraint firstItem="OcC-OF-HUY" firstAttribute="centerX" secondItem="aTU-BW-OW9" secondAttribute="centerX" id="Vb6-Pv-n3W"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Yh-yu-kqf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cBv-7U-XDd" firstAttribute="top" secondItem="GcO-Ai-MaN" secondAttribute="top" id="0G0-X3-AXW"/>
+                            <constraint firstItem="ZfE-g9-z1X" firstAttribute="top" secondItem="6Yh-yu-kqf" secondAttribute="top" constant="50" id="0K4-Q5-mcL"/>
+                            <constraint firstAttribute="trailing" secondItem="cBv-7U-XDd" secondAttribute="trailing" id="3WW-wk-nLu"/>
+                            <constraint firstAttribute="bottom" secondItem="cBv-7U-XDd" secondAttribute="bottom" constant="-54" id="5ht-5L-btY"/>
+                            <constraint firstItem="6Yh-yu-kqf" firstAttribute="bottom" secondItem="ZfE-g9-z1X" secondAttribute="bottom" constant="50" id="LRe-Yh-SCd"/>
+                            <constraint firstItem="6Yh-yu-kqf" firstAttribute="trailing" secondItem="ZfE-g9-z1X" secondAttribute="trailing" constant="50" id="MEs-Ox-wJZ"/>
+                            <constraint firstItem="ZfE-g9-z1X" firstAttribute="leading" secondItem="6Yh-yu-kqf" secondAttribute="leading" constant="50" id="p6h-IP-yu9"/>
+                            <constraint firstItem="cBv-7U-XDd" firstAttribute="leading" secondItem="GcO-Ai-MaN" secondAttribute="leading" id="vHa-dM-6b3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Angela's Game" id="wFw-9D-M4j"/>
                     <connections>
